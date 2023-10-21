@@ -4,6 +4,11 @@ import logo from '../assets/images/logo.png'
 
 function Navbar() {
 
+  // PAGE RELOAD WHEN LOGO IS CLICKED
+  const pageReload = () =>{
+    window.location.reload();
+  }
+
   // NAVBAR MENU HIGHLIGHTING
   const [NavMenu, setNavMenu] = useState(false)
   
@@ -46,12 +51,10 @@ function Navbar() {
       <nav className='fixed h-[4rem] md:h-[5rem] w-full px-6 md:px-[3rem] 2xl:px-[10rem] flex justify-between items-center bg-gray-800 z-20'>
 
           {/* logo */}
-          <Link to="home" smooth={true} duration={500}>
-            <div className="cursor-pointer w-[4.4rem] md:w-[6rem] lg:w-[7rem]">
-              <img src={logo} alt="" className='w-full h-full'/>
-              {/* <p className='text-xl md:text-3xl 2xl:text-4xl text-blue-300 drop-shadow-md'>APK</p> */}
-            </div>
-          </Link>
+          <div className="cursor-pointer w-[4.4rem] md:w-[6rem] lg:w-[7rem]" onClick={pageReload}>
+            <img src={logo} alt="" className='w-full h-full'/>
+            {/* <p className='text-xl md:text-3xl 2xl:text-4xl text-blue-300 drop-shadow-md'>APK</p> */}
+          </div>
 
 
           {/* menu */}
