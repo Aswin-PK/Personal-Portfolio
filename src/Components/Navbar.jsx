@@ -4,7 +4,7 @@ import logo from '../assets/images/logo.png'
 
 function Navbar() {
 
-  // navbar menu highlighting
+  // NAVBAR MENU HIGHLIGHTING
   const [NavMenu, setNavMenu] = useState(false)
   
   const handleClick = () =>{
@@ -20,9 +20,9 @@ function Navbar() {
   const handleSetActive = (to) => {
     setActiveLink(to);
   };
+  // /////////////////////////////////
   
-  
-  // custom cursor movement 
+  // CUSTOM CURSOR
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
 
   const handleMouseMove = (e) => {
@@ -39,7 +39,7 @@ function Navbar() {
       document.removeEventListener('mousemove', handleMouseMove);
     };
   }, [cursorPosition]);
-  
+  // /////////////////////////////////
 
   return (
     <>
@@ -79,21 +79,21 @@ function Navbar() {
           </span>
           {/* Mobile view */}
           <div className={`${NavMenu ? 'absolute' : 'hidden'}  w-[15rem] h-[18rem] right-0 top-[4rem] p-3 flex flex-col items-center justify-center gap-3 bg-gray-900 rounded-md`}>
-            <span className='active:bg-gray-800 text-gray-300 w-full h-full rounded grid place-content-center'>
-              <Link onClick={handleClick} to="home" smooth={true} duration={500}>Home</Link>
-            </span>
-            <span className='active:bg-gray-800 text-gray-300 w-full h-full rounded grid place-content-center'>
-              <Link onClick={handleClick} to="about" smooth={true} duration={500}>About</Link>
-            </span>
-            <span className='active:bg-gray-800 text-gray-300 w-full h-full rounded grid place-content-center'>
-              <Link onClick={handleClick} to="skills" smooth={true} duration={500}>Skills</Link>
-            </span>
-            <span className='active:bg-gray-800 text-gray-300 w-full h-full rounded grid place-content-center'>
-              <Link onClick={handleClick} to="works" smooth={true} duration={500}>Works</Link>
-            </span>
-            <span className='active:bg-gray-800 text-gray-300 w-full h-full rounded grid place-content-center'>
-              <Link onClick={handleClick} to="contact" smooth={true} duration={500}>Contact</Link>
-            </span>
+            <Link onClick={handleClick} to="home" smooth={true} duration={500} className='active:bg-gray-800 text-gray-300 w-full h-full rounded grid place-content-center'>
+              <span>Home</span>
+            </Link>
+            <Link onClick={handleClick} to="about" smooth={true} duration={500} className='active:bg-gray-800 text-gray-300 w-full h-full rounded grid place-content-center'>
+              <span>About</span>
+            </Link>
+            <Link onClick={handleClick} to="skills" smooth={true} duration={500} className='active:bg-gray-800 text-gray-300 w-full h-full rounded grid place-content-center'>
+              <span>Skills</span>
+            </Link>
+            <Link onClick={handleClick} to="works" smooth={true} duration={500} className='active:bg-gray-800 text-gray-300 w-full h-full rounded grid place-content-center'>
+              <span>Works</span>
+            </Link>  
+            <Link onClick={handleClick} to="contact" smooth={true} duration={500} className='active:bg-gray-800 text-gray-300 w-full h-full rounded grid place-content-center'>
+              <span>Contact</span>
+            </Link>
           </div>
 
       </nav>
