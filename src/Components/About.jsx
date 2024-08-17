@@ -9,7 +9,7 @@ function About() {
                   <p className='text-gray-700 max-w-full md:max-w-[70rem] text-sm md:text-md lg:text-lg 2xl:text-xl mt-2 md:mt-6 mb-1 md:mb-2 text-justify'>
                       A passionate Frontend Developer with expertise in Vue.js, React.js, and Nuxt.js, I love creating dynamic, responsive web experiences that blend design and functionality. With a Master's degree in Computer Application, I have a solid foundation in programming and problem-solving, making it easy to pick up new languages and technologies. I’m always eager to learn, innovate, and collaborate on exciting projects.
                   </p>
-                  <strong>Let’s build something incredible together!</strong>
+                  <strong className="text-sm md:text-md lg:text-lg 2xl:text-xl">Let’s build something incredible together!</strong>
               </div>
           </div>
       </div>
