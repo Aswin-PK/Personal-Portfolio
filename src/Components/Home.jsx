@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-scroll'
-import resume from '../assets/docs/AswinPK_CV.pdf'
+import resume from '../assets/docs/AswinPK_FrontendDeveloper.pdf'
 
 function Home() {
   return (
@@ -20,7 +20,6 @@ function Home() {
                 <a href="https://www.linkedin.com/in/aswinpk47"><span><i className='fa-brands fa-linkedin text-[2rem] md:text-[2.2rem] text-slate-500 hover:text-[#435eb8] flex items-center justify-center rounded-lg'></i></span></a>
                 <a href="https://github.com/Aswin-PK"><span><i className='fa-brands fa-github text-[2rem] md:text-[2.2rem] text-slate-500 hover:text-[#3a3a3a]  flex items-center justify-center rounded-lg'></i></span></a>
                 <a href="https://www.instagram.com/aswin.p.k/"><span><i className='fa-brands fa-instagram text-[2rem] md:text-[2.2rem] text-slate-500 hover:text-[#fc5974] flex items-center justify-center rounded-lg'></i></span></a>
-                <a href="https://twitter.com/Aswin_P_K"><span><i className='fa-brands fa-x-twitter text-[2rem] md:text-[2.2rem] text-slate-500 hover:text-[#5eb9ff] flex items-center justify-center rounded-lg'></i></span></a>
               </div>
           </div>
       </div>
